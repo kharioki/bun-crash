@@ -1,10 +1,10 @@
 const server = Bun.serve({
   fetch(req: Request): Response | Promise<Response> {
-    return new Response("Hello from Bun!!");
+    return new Response("Hello from Bun!!!");
   },
 
   // Optional port number - the default value is 3000
   port: Bun.env.PORT || 8000,
 });
 
-console.log(`Listening on port ${server.port}`);
+console.log(`Listening on port: ${server.port}`);
