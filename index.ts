@@ -4,7 +4,7 @@ const server = Bun.serve({
   },
 
   // Optional port number - the default value is 3000
-  port: 4000,
+  port: process.env.PORT || 8000,
 });
 
 console.log(`Listening on port ${server.port}`);
